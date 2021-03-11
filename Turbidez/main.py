@@ -105,12 +105,12 @@ for TssValue in TSS:
 for j in range(numRangosdeTss):
     print(f'la media de {contador[j]} medidas de un TSS de {j*0.005 + 2.2} es {media[j]}')
 
-aCalc2, bCalc2, r2 = minimosCuadrados(TssValueGraph, media)
+# aCalc2, bCalc2, r2 = minimosCuadrados(TssValueGraph, media)
 aCalcL, bCalcL, rL = minimosCuadrados(TssLog, turbidezLog)
 # Las datos de turbidez considerados ruido por la funcion de proporcionalidad
 print(medidasMalas)
 print(aCalc, bCalc, r)
-print(aCalc2, bCalc2, r2)
+# print(aCalc2, bCalc2, r2)
 print(aCalcL, bCalcL, rL)
 
 plt.figure(1)
